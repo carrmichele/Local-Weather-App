@@ -1,0 +1,62 @@
+/* 1. Google fonts */
+@import "https://fonts.googleapis.com/css?family=Roboto";
+/* 2. Main Container */
+.container {
+  -webkit-backface-visibility: visible;
+  -moz-backface-visibility: visible;
+  backface-visibility: visible;
+  background: -webkit-gradient(linear, left top, right top, from(#5c85d6), to(#99b3e6));
+  background: -webkit-linear-gradient(top, #5c85d6, #99b3e6);
+  background: -moz-linear-gradient(top, #5c85d6, #99b3e6);
+  background: -o-linear-gradient(top, #5c85d6, #99b3e6);
+  background: -ms-linear-gradient(top, #5c85d6, #99b3e6);
+  background: linear-gradient(top, #5c85d6, #99b3e6);
+  text-align: center;
+  height: em;
+  width: 25em;
+  border-radius: 10px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  overflow: hidden;
+  position: relative;
+}
+
+/* 3. City, Temperature and Icon */
+#city {
+  color: #c2d1f0;
+  font-size: 5vmin;
+}
+
+#fTemp {
+  font-size: 15vmin;
+}
+
+#icon {
+  padding: 10px;
+  font-size: 20vh;
+  color: white;
+}
+
+/* 4. Weather Conditions */
+.conditions {
+  font-size: 3vh;
+  color: white;
+  padding-bottom: 1em;
+}
+
+#weatherType, #date {
+  align: left;
+  right: 1em;
+}
+
+#windSpeed, #time {
+  align: right;
+  left: 1em;
+}
+
+/* 5. Date and time */
+.topbar {
+  font-size: 3vh;
+  color: white;
+  padding-top: 1em;
+}

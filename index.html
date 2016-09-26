@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Weather App Snippet Featuring Openweather API</title>
+    
+    
+    
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons-wind.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <div class="container" ng-app="myApp">
+    <div ng-controller="datCtrl" class="row topbar">	
+			<div class="col-sm-6" id="date">{{ today | date: "EEE, M/d/yy"  }}  </div> 
+		<div class="col-sm-6" id="time"> {{ today | date: "shortTime" }} </div> </div><hr> 
+	<div class="mainContent">
+		<h4 id="city"></h4>
+      <div class="icon">
+        <i id="icon" class="wi wi-day-sunny"></i></div>
+			<p></p>
+		<div class ="btn" id="fTemp"></div></div>
+			<div class ="row conditions">
+				<div class="col-sm-6">
+				<span id = "weatherType"></span></div>
+				<div class="col-sm-6">
+ 				<span id = "windSpeed"></span>
+				</div></div></div>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
